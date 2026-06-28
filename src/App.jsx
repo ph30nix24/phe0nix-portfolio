@@ -11,7 +11,7 @@ const App = () => {
   const isMobile = useMediaQuery({ maxWidth: 768 });
   return (
     <>
-      <ParticleCanvas />
+      <ParticleCanvas isMobile={isMobile} />
       <main className='w-full min-h-screen relative overflow-x-hidden text-[#131313] max-lg:px-5'>
         <Navbar isMobile={isMobile}/>
         <Hero isMobile={isMobile}/>

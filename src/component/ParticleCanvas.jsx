@@ -15,7 +15,7 @@ function createParticle(W, H) {
   };
 }
 
-export default function ParticleCanvas() {
+export default function ParticleCanvas({ isMobile }) {
   const canvasRef = useRef(null);
 
   useEffect(() => {
@@ -31,7 +31,7 @@ export default function ParticleCanvas() {
 
     function init() {
       resize();
-      particles = Array.from({ length: PARTICLE_COUNT }, () =>
+      particles = Array.from({ length: isMobile ? 30 : PARTICLE_COUNT }, () =>
         createParticle(W, H)
       );
     }
@@ -43,7 +43,7 @@ export default function ParticleCanvas() {
       grad.addColorStop(0.4, "#dde8fe");
       grad.addColorStop(1, "#ccdcff");
       ctx.fillStyle = grad;
-      // ctx.fillRect(0, 0, W, H);
+      // {isMobile && ctx.fillRect(0, 0, W, H);}
 
       // Lines
       for (let i = 0; i < particles.length; i++) {
