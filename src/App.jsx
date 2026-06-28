@@ -2,6 +2,9 @@
 import { useMediaQuery } from 'react-responsive';
 import Navbar from './component/Navbar'
 import ParticleCanvas from './component/ParticleCanvas'
+import Hero from './component/Hero';
+
+
 const App = () => {
   const isMobile = useMediaQuery({ maxWidth: 768 });
   return (
@@ -9,7 +12,7 @@ const App = () => {
       <ParticleCanvas />
       <main className='w-full min-h-screen relative overflow-x-hidden text-[#131313]'>
         <Navbar isMobile={isMobile}/>
-
+        <Hero isMobile={isMobile}/>
       </main>
     </>
   )

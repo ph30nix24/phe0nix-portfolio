@@ -7,7 +7,7 @@ const Navbar = () => {
 
   const resumeRef = useMagneticButton()
   return (
-    <nav className='fixed top-0 left-0 z-99 w-full py-3 backdrop-blur-sm center'>
+    <nav className='fixed top-0 left-0 z-99 w-full py-3 center'>
       <div className='w-fit flex items-center mx-auto px-10 rounded-full py-3 bg-white/60 backdrop-blur-lg'>
         <p className='font-heading text-primary uppercase font-semibold tracking-widest text-sm'>
           anuj.dev

@@ -8,8 +8,8 @@ function createParticle(W, H) {
   return {
     x: Math.random() * W,
     y: Math.random() * H,
-    vx: (Math.random() - 0.5) * 0.4,
-    vy: (Math.random() - 0.5) * 0.4,
+    vx: (Math.random() - 0.5) * 0.1,
+    vy: (Math.random() - 0.5) * 0.1,
     r: Math.random() * 2.5 + 1,
     opacity: Math.random() * 0.4 + 0.15,
   };
@@ -43,7 +43,7 @@ export default function ParticleCanvas() {
       grad.addColorStop(0.4, "#dde8fe");
       grad.addColorStop(1, "#ccdcff");
       ctx.fillStyle = grad;
-      ctx.fillRect(0, 0, W, H);
+      // ctx.fillRect(0, 0, W, H);
 
       // Lines
       for (let i = 0; i < particles.length; i++) {
