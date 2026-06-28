@@ -9,7 +9,7 @@ const Hero = () => {
     const talkRef = useMagneticButton()
 
     return (
-        <section id='hero' className='w-280 h-fit mx-auto mt-35 bg-white/40 rounded-4xl px-20 py-15 backdrop-blur-xl border border-white shadow-lg shadow-primary/10'>
+        <section id='hero' className='w-280 h-fit mx-auto mt-35 bg-white/40 rounded-4xl px-20 py-15 backdrop-blur-lg border border-white shadow-lg shadow-primary/10'>
             <h1 className='text-7xl font-heading uppercase font-semibold leading-snug'>Anuj. <br /><span className='text-primary'> Frontend <br /> Developer.</span></h1>
             <div className='w-full flex gap-5 items-end'>
                 <div className='w-1/2 pr-10 font-body'>
@@ -29,7 +29,10 @@ const Hero = () => {
                         
                     </div>
                 </div>
-                <div className='w-1/2 h-fit'></div>
+                <div className='w-fit ml-30 h-fit pl-4 border-l-2 border-primary '>
+                    <p className='font-subheading font-light text-xs tracking-wider uppercase pb-8'>📍 Based in Delhi, India</p>
+                    <p className='font-subheading font-light text-xs tracking-wider uppercase'><span className='inline-block size-2 bg-[#22c55e] rounded-full avail-dot mx-1'></span> Available for Freelance</p>
+                </div>
             </div>
 
         </section>
