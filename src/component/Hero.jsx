@@ -10,7 +10,7 @@ const Hero = () => {
 
     return (
         <section id='hero' className='w-280 h-fit mx-auto mt-35 bg-white/40 rounded-4xl px-20 py-15 backdrop-blur-lg border border-white shadow-lg shadow-primary/10'>
-            <h1 className='text-7xl font-heading uppercase font-semibold leading-snug'>Anuj. <br /><span className='text-primary'> Frontend <br /> Developer.</span></h1>
+            <h1 className='text-7xl font-heading uppercase font-semibold leading-snug text-[#1f1f1f]'>Anuj. <br /><span className='text-primary'> Frontend <br /> Developer.</span></h1>
             <div className='w-full flex gap-5 items-end'>
                 <div className='w-1/2 pr-10 font-body'>
                     <p className='text-base py-10'>
